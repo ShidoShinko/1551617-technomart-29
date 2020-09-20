@@ -1,0 +1,497 @@
+/*Fonts*/
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Cuprum Regular"), local("Cuprum-Regular"),
+    url("../fonts/cuprum.woff2") format("woff2"),
+    url("../fonts/cuprum.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Cuprum Bold"), local("Cuprum-Bold"),
+    url("../fonts/cuprumbold.woff2") format("woff2"),
+    url("../fonts/cuprumbold.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Cuprum";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Cuprum Italic"), local("Cuprum-Italic"),
+    url("../fonts/cuprumitalic.woff2") format("woff2"),
+    url("../fonts/cuprumitalic.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: local("PT Sans"), local("PTSans-Regular"),
+    url("../fonts/ptsans.woff2") format("woff2"),
+    url("../fonts/ptsans.woff") format("woff");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+    url("../fonts/ptsansbold.woff2") format("woff2"),
+    url("../fonts/ptsansbold.woff") format("woff");
+  font-display: swap;
+}
+
+:root {
+  --basic-blue: #32425c;
+  --basic-dark-blue: #293449;
+  --basic-red: #ee3643;
+  --basic-green: #63a63e;
+  --basic-background: #f1f5f7;
+  --basic-white: #ffffff;
+  --basic-yellow: #ffbf47;
+  --basic-orange: #ffd180;
+  --basic-black: #000000;
+  --basic-transparent-white: rgba(255, 255, 255, 0.5);
+  --transparent-advant-white: rgba(255, 255, 255, 0.3);
+  --basic-head-grey: #f9f5f0;
+  --basic-brand-grey: #a9a9a9;
+  --basic-light-red: #ff5357;
+
+  --instruments: #3bbce3;
+  --technics: #dc91d8;
+  --discounts: #8ed78f;
+  --delivery: #ffc047;
+
+  --header-background: #f3f7f9;
+
+  --success-green: #5fbb2d;
+  --success-red: #ca2c37;
+  --success-advant: rgba(197, 197, 197, 0.3);
+
+  --special-red: #ba2732;
+  --special-green: #518534;
+  --special-blue: #1d2739;
+  --special-dark-blue: #161d29;
+  --special-button-grey: #c5c5c5;
+  --special-advant: rgba(169, 169, 169, 0.3);
+}
+
+body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*Header*/
+
+.header {
+  background-color: var(--header-background);
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.header-bar {
+  background-color: var(--basic-blue);
+}
+
+.header-bar a:active {
+  color: var(--basic-transparent-white);
+  background-color: var(--special-dark-blue);
+}
+
+.button-order {
+  background-color: var(--basic-green);
+  text-align: center;
+}
+
+.button-order:hover {
+  background-color: var(--success-green);
+}
+
+.header-bar .button-order:active {
+  background-color: var(--basic-green);
+}
+
+.header-text {
+  font-style: italic;
+  font-size: 16px;
+  line-height: 23px;
+  color: var(--basic-red);
+}
+
+.header-tel {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 30px;
+  color: var(--basic-red);
+  border: 3px solid var(--basic-white);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.header-address {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--basic-blue);
+}
+
+.button-login,
+.button-registration {
+  font-size: 21px;
+  line-height: 21px;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+.button-login:hover,
+.button-registration:hover {
+  color: var(--basic-red);
+}
+
+.button-login:active,
+.button-registration:active {
+  color: var(--special-button-grey);
+}
+
+/*Navigation*/
+.nav {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-white);
+  background-color: var(--basic-blue);
+}
+
+.list {
+  list-style: none;
+}
+
+.nav-item a:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.nav-item a:active {
+  color: var(--basic-white);
+  opacity: 0.5;
+}
+
+.nav-item a:visited,
+.header-bar a:visited {
+  color: var(--basic-white);
+}
+
+/*Main*/
+
+.main {
+  font-family: "Cuprum", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+}
+
+.list {
+  list-style: none;
+}
+
+/*Title and button*/
+.main-title {
+  font-size: 30px;
+  line-height: 30px;
+  color: var(--basic-blue);
+  background-color: var(--basic-head-grey);
+}
+
+.main-button {
+  font-size: 14px;
+  line-height: 28px;
+  text-transform: uppercase;
+  background-color: var(--basic-red);
+  color: var(--basic-white);
+}
+
+.main-button:hover {
+  background-color: var(--success-red);
+}
+
+.main-button:active {
+  background-color: var(--special-red);
+}
+
+/*Advantages*/
+.advantages {
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+  color: var(--basic-white);
+}
+
+.advantage-link {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  background-color: var(--transparent-advant-white);
+  color: var(--basic-white);
+}
+
+.advantage-link:hover {
+  background-color: var(--success-advant);
+}
+
+.advantage-link:active {
+  background-color: var(--special-advant);
+}
+
+.materials {
+  background-color: var(--basic-yellow);
+}
+
+.instruments {
+  background-color: var(--instruments);
+}
+
+.technics {
+  background-color: var(--technics);
+}
+
+.discounts {
+  background-color: var(--discounts);
+}
+
+.delivery {
+  background-color: var(--delivery);
+}
+
+.slider-text {
+  font-size: 18px;
+  line-height: 24px;
+  /*background for example*/
+  background-color: var(--basic-black);
+}
+
+.slider-title {
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: bold;
+  /*background for example*/
+  background-color: var(--basic-black);
+}
+
+/*Popular products*/
+.product-title {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  font-weight: bold;
+  color: var(--basic-black);
+}
+
+.product-oldprice {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration-line: line-through;
+  color: var(--basic-brand-grey);
+}
+
+.product-price {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: var(--basic-white);
+  background-color: var(--basic-red);
+}
+
+/*Popular brand*/
+.brand-link:hover {
+  opacity: 0.5;
+}
+
+.brand-link:active {
+  opacity: 0.15;
+}
+
+.services {
+  background-color: var(--header-background);
+}
+
+/*Services*/
+.services-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.service-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-blue);
+}
+
+.service-credit-button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-white);
+  background-color: var(--basic-light-red);
+}
+
+/*Services tab*/
+.services-tab-item {
+  font-size: 21px;
+  line-height: 30px;
+  font-weight: bold;
+  background-color: var(--basic-blue);
+}
+
+.services-tab-link {
+  color: var(--basic-white);
+}
+
+.services-tab-item:hover {
+  background-color: var(--basic-dark-blue);
+}
+
+.services-tab-item-selected {
+  background-color: var(--basic-white);
+}
+
+.services-tab-item-selected a {
+  color: var(--basic-blue);
+}
+
+.services-tab-item-selected:hover a {
+  color: var(--basic-white);
+}
+
+.services-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/*Company info*/
+.company-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.company-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+.company-list-item {
+  font-size: 18px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/*Contacts*/
+.contacts-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: var(--basic-black);
+}
+
+.contacts-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+}
+
+/*Footer*/
+
+.footer {
+  font-size: 18px;
+  line-height: 24px;
+}
+
+/*Upper side footer*/
+.footer-upper {
+  background-color: var(--basic-blue);
+}
+
+.footer-address {
+  color: var(--header-background);
+}
+
+/*Footer navigation*/
+.footer-menu-link {
+  color: var(--basic-background);
+}
+
+.footer-menu-link-yellow {
+  color: var(--basic-orange);
+}
+
+.footer-menu-link:hover {
+  text-decoration-line: underline;
+}
+
+.footer-menu-link:active {
+  opacity: 0.5;
+  text-decoration-line: none;
+}
+
+/*Lower side footer*/
+.footer-lower {
+  background-color: var(--basic-dark-blue);
+}
+
+.copyright {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.footer-text {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-white);
+}
+
+.footer-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-orange);
+}
+
+.footer-link:hover {
+  font-size: 16px;
+  line-height: 18px;
+  text-decoration-line: underline;
+}
+
+.footer-link:active {
+  font-size: 16px;
+  line-height: 18px;
+  color: var(--basic-red);
+  text-decoration-line: none;
+}
