@@ -88,6 +88,9 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
+  text-transform: none;
+  color: var(--basic-black);
+  background-color: var(--basic-white);
 }
 
 a {
@@ -153,21 +156,18 @@ img {
   color: var(--basic-blue);
 }
 
-.button-login,
-.button-registration {
+.button-account {
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
 }
 
-.button-login:hover,
-.button-registration:hover {
+.button-account:hover {
   color: var(--basic-red);
 }
 
-.button-login:active,
-.button-registration:active {
+.button-account:active {
   color: var(--special-button-grey);
 }
 
@@ -257,19 +257,19 @@ img {
   background-color: var(--special-advant);
 }
 
-.materials {
+.advantage-materials {
   background-color: var(--basic-yellow);
 }
 
-.instruments {
+.advantage-instruments {
   background-color: var(--instruments);
 }
 
-.technics {
+.advantage-technics {
   background-color: var(--technics);
 }
 
-.discounts {
+.advantage-discounts {
   background-color: var(--discounts);
 }
 
@@ -451,11 +451,13 @@ img {
   color: var(--basic-orange);
 }
 
-.footer-menu-link:hover {
+.footer-menu-link:hover,
+.footer-menu-link-yellow:hover {
   text-decoration-line: underline;
 }
 
-.footer-menu-link:active {
+.footer-menu-link:active,
+.footer-menu-link-yellow:active {
   opacity: 0.5;
   text-decoration-line: none;
 }
