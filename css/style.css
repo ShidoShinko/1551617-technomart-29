@@ -109,17 +109,37 @@ img {
   height: auto;
 }
 
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  /* display: grid;
+  grid-template-rows: min-content 1ft min-content; */
+}
+
+.wrapper {
+  width: 940px;
+  margin: 0 auto;
+  /* outline: 5px solid rgba(0, 255, 255, 0.7);
+  outline-offset: -5px; */
+}
+
 /*Header*/
 
 .header {
+  display: grid;
   background-color: var(--header-background);
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
+  min-height: 320px;
 }
 
 .header-bar {
   background-color: var(--basic-blue);
+  height: 42px;
 }
 
 .header-bar a:active {
@@ -127,7 +147,37 @@ img {
   background-color: var(--special-dark-blue);
 }
 
+.header-bar .button-order:active {
+  background-color: var(--basic-green);
+}
+
+.header-bar-container {
+  display: grid;
+  grid-template-columns: min-content auto min-content min-content min-content;
+}
+
+.header-logo {
+  width: 220px;
+  height: 47px;
+}
+
+.header-search p {
+  margin: 0px;
+}
+
+.header-favorites,
+.header-basket {
+  width: 150px;
+  height: 42px;
+}
+
+.header-basket-fill {
+  background-color: var(--basic-red);
+}
+
 .button-order {
+  width: 150px;
+  height: 42px;
   background-color: var(--basic-green);
   text-align: center;
 }
@@ -136,27 +186,25 @@ img {
   background-color: var(--success-green);
 }
 
-.header-bar .button-order:active {
-  background-color: var(--basic-green);
-}
-
-.basket-fill {
-  background-color: var(--basic-red);
-}
-
-.breadcrumbs-link {
-  font-family: "PT Sans", Arail, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
-  text-transform: uppercase;
-  color: var(--basic-black);
+.header-content {
+  height: 158px;
+  display: grid;
+  grid-template-columns: min-content min-content auto;
+  grid-template-rows: min-content min-content;
 }
 
 .header-text {
+  grid-row-start: 1;
+  grid-row-end: 3;
   font-style: italic;
   font-size: 16px;
   line-height: 23px;
   color: var(--basic-red);
+  width: 197px;
+  height: 71px;
+  margin-top: 44px;
+  margin-left: 30px;
+  margin-right: 93px;
 }
 
 .header-tel {
@@ -167,12 +215,30 @@ img {
   border: 3px solid var(--basic-white);
   box-sizing: border-box;
   text-align: center;
+  width: 270px;
+  height: 45px;
+  margin-top: 46px;
 }
 
 .header-address {
+  grid-row-start: 2;
   font-size: 14px;
   line-height: 24px;
   color: var(--basic-blue);
+  margin-top: 3px;
+  text-align: center;
+  overflow: hidden;
+  height: 70px;
+}
+
+.header-account {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+}
+
+.account-private {
+  grid-row-start: 2;
 }
 
 .button-account {
@@ -180,6 +246,20 @@ img {
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
+  height: 45px;
+  margin-top: 46px;
+}
+
+.header-button-login {
+  width: 121px;
+  height: 45px;
+  margin-left: 69px;
+}
+
+.header-button-registration {
+  width: 150px;
+  height: 45px;
+  margin-left: 10px;
 }
 
 .button-account:hover {
@@ -217,10 +297,20 @@ img {
   line-height: 24px;
   color: var(--basic-white);
   background-color: var(--basic-blue);
+  height: 60px;
+  margin-bottom: 60px;
+}
+
+.nav-menu {
+  display: grid;
+  grid-auto-flow: column;
+  margin: 0px;
 }
 
 .list {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .nav-item a:hover {
@@ -240,19 +330,26 @@ img {
 /*Main*/
 
 .main {
+  display: grid;
   font-family: "Cuprum", Arial, sans-serif;
   font-size: 13px;
   line-height: 24px;
 }
 
-.list {
-  list-style: none;
+.breadcrumbs-link {
+  font-family: "PT Sans", Arail, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: var(--basic-black);
 }
 
 /*Title and button*/
 .main-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
+  text-transform: uppercase;
   color: var(--basic-blue);
   background-color: var(--basic-head-grey);
 }
@@ -275,18 +372,73 @@ img {
 
 /*Advantages*/
 .advantages {
-  font-size: 24px;
-  line-height: 30px;
-  font-weight: bold;
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+  grid-template-rows: min-content min-content min-content;
+  gap: 20px;
   color: var(--basic-white);
 }
 
+.advantage-card {
+  width: 300px;
+  height: 123px;
+}
+
+.advantage-materials {
+  background-color: var(--basic-yellow);
+  grid-row-start: 1;
+  grid-column-start: 1;
+}
+
+.advantage-instruments {
+  background-color: var(--instruments);
+  grid-row-start: 1;
+  grid-column-start: 2;
+}
+
+.advantage-technics {
+  background-color: var(--technics);
+  grid-row-start: 1;
+  grid-column-start: 3;
+}
+
+.advantage-discounts {
+  background-color: var(--discounts);
+  grid-row-start: 2;
+  grid-column-start: 3;
+}
+
+.advantage-delivery {
+  background-color: var(--delivery);
+  grid-row-start: 3;
+  grid-column-start: 3;
+}
+
+.advantage-title {
+  margin: 0;
+  margin-top: 20px;
+  margin-left: 23px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: bold;
+}
+
 .advantage-link {
+  /* Работает выравнивание по центру */
+  position: absolute;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+  width: 135px;
+  height: 38px;
   font-size: 14px;
   line-height: 18px;
   text-transform: uppercase;
   background-color: var(--transparent-advant-white);
   color: var(--basic-white);
+  margin-left: 23px;
+  margin-bottom: 21px;
+  margin-top: 14px;
 }
 
 .advantage-link:hover {
@@ -297,42 +449,50 @@ img {
   background-color: var(--special-advant);
 }
 
-.advantage-materials {
-  background-color: var(--basic-yellow);
+.advantages-img {
+  margin-left: 213px;
 }
 
-.advantage-instruments {
-  background-color: var(--instruments);
+.slider {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  grid-column-start: 1;
+  grid-column-end: 3;
 }
 
-.advantage-technics {
-  background-color: var(--technics);
-}
-
-.advantage-discounts {
-  background-color: var(--discounts);
-}
-
-.advantage-delivery {
-  background-color: var(--delivery);
+.slider-card {
+  background-image: url(../img/perforators.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 620px;
+  height: 266px;
 }
 
 .slider-text {
   font-size: 18px;
   line-height: 24px;
-  /*background for example*/
-  background-color: var(--basic-black);
 }
 
 .slider-title {
+  margin: 0px;
   font-size: 36px;
   line-height: 36px;
   font-weight: bold;
-  /*background for example*/
-  background-color: var(--basic-black);
 }
 
 /*Popular products*/
+
+.popular-product-list {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+.product-item {
+  width: 220px;
+  height: 318px;
+}
+
 .product-title {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
@@ -360,6 +520,19 @@ img {
 }
 
 /*Popular brand*/
+
+.popular-brand-list {
+  display: grid;
+  grid-template-columns: min-content min-content min-content min-content;
+  grid-auto-flow: row;
+  gap: 20px;
+}
+
+.brand-item {
+  width: 220px;
+  height: 145px;
+}
+
 .brand-link:hover {
   opacity: 0.5;
 }
@@ -368,23 +541,37 @@ img {
   opacity: 0.15;
 }
 
+/*Services*/
 .services {
   background-color: var(--header-background);
 }
 
-/*Services*/
 .services-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 0px;
+  margin-top: 64px;
 }
 
 .service-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-blue);
+  margin: 0px;
+}
+
+.services-text {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  color: var(--basic-black);
+  width: 394px;
+  height: 49px;
 }
 
 .service-credit-button {
@@ -396,11 +583,19 @@ img {
 }
 
 /*Services tab*/
+
+.services-wrapper {
+  display: grid;
+  grid-template-columns: min-content min-content min-content;
+}
+
 .services-tab-item {
   font-size: 21px;
   line-height: 30px;
   font-weight: bold;
   background-color: var(--basic-blue);
+  width: 240px;
+  height: 61px;
 }
 
 .services-tab-link {
@@ -423,19 +618,35 @@ img {
   color: var(--basic-white);
 }
 
-.services-text {
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 13px;
-  line-height: 24px;
-  color: var(--basic-black);
+.service-list {
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.services-item {
+  display: none;
+}
+
+.services-item-selected {
+  display: block;
+  grid-column-start: 2;
 }
 
 /*Company info*/
+.company-wrapper {
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: auto 300px;
+}
+
 .company-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 0;
+  margin-top: 70px;
 }
 
 .company-text {
@@ -443,6 +654,7 @@ img {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+  width: 478px;
 }
 
 .company-list-item {
@@ -455,8 +667,11 @@ img {
 .contacts-title {
   font-size: 30px;
   line-height: 30px;
+  font-weight: normal;
   text-transform: uppercase;
   color: var(--basic-black);
+  margin: 0;
+  margin-top: 70px;
 }
 
 .contacts-text {
@@ -464,6 +679,8 @@ img {
   font-size: 13px;
   line-height: 24px;
   color: var(--basic-black);
+  width: 181px;
+  height: 49px;
 }
 
 /*Sorting*/
@@ -586,8 +803,20 @@ img {
   background-color: var(--basic-blue);
 }
 
+.footer-logo {
+  width: 220px;
+  height: 68px;
+}
+
+.footer-upper-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: min-content min-content;
+}
+
 .footer-address {
   color: var(--header-background);
+  grid-row-start: 2;
 }
 
 /*Footer navigation*/
@@ -615,16 +844,36 @@ img {
   background-color: var(--basic-dark-blue);
 }
 
+.footer-lower-container {
+  display: grid;
+  grid-template-columns: min-content 1fr min-content min-content;
+}
+
 .copyright {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+  width: 240px;
+  margin: 0;
 }
 
 .footer-text {
+  font-family: "Cuprum", Arial, sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: var(--basic-white);
+  margin: 0;
+}
+
+.footer-feedback {
+  min-width: 160px;
+  margin-right: 50px;
+}
+
+.footer-developer {
+  margin-right: 12px;
+  min-width: 100px;
 }
 
 .footer-link {
