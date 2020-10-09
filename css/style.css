@@ -147,7 +147,9 @@ img {
   background-color: var(--basic-blue);
 }
 
-.header-bar a:active {
+.header-favorites:active,
+.header-basket:active,
+.button-order:active {
   color: var(--basic-transparent-white);
   background-color: var(--special-dark-blue);
 }
@@ -158,17 +160,12 @@ img {
 
 .header-bar-container {
   display: grid;
-  grid-template-columns: 4fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 4fr 1fr 1fr 1fr;
 }
 
 .header-logo {
-  position: absolute;
+  margin-bottom: -15px;
   width: 220px;
-  height: 47px;
-}
-
-.header-search {
-  margin-left: 220px;
 }
 
 .header-search p {
@@ -182,7 +179,7 @@ img {
   align-items: center;
   justify-content: center;
   width: 150px;
-  height: 42px;
+  min-height: 42px;
 }
 
 .header-basket-fill {
@@ -212,7 +209,6 @@ img {
   line-height: 23px;
   color: var(--basic-red);
   width: 197px;
-  height: 71px;
   margin: 0;
   margin-top: 44px;
   margin-left: 30px;
@@ -231,7 +227,6 @@ img {
   box-sizing: border-box;
   text-align: center;
   width: 270px;
-  height: 45px;
   margin-top: 46px;
 }
 
@@ -244,7 +239,6 @@ img {
   margin-top: 3px;
   text-align: center;
   overflow: hidden;
-  /* height: 70px; */
 }
 
 .header-account {
@@ -264,7 +258,7 @@ img {
   line-height: 21px;
   color: var(--basic-black);
   background-color: var(--basic-white);
-  height: 45px;
+  min-height: 45px;
   margin-top: 46px;
 }
 
@@ -326,7 +320,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  min-height: 60px;
 }
 
 .nav-link:hover {
@@ -476,7 +470,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   width: 620px;
-  height: 266px;
+  min-height: 266px;
 }
 
 .slider-text {
@@ -541,7 +535,6 @@ img {
 
 .brand-item {
   width: 220px;
-  height: 145px;
 }
 
 .brand-link:hover {
@@ -815,7 +808,6 @@ img {
 
 .footer-logo {
   width: 220px;
-  height: 68px;
 }
 
 .footer-upper-container {
