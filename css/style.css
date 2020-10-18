@@ -325,6 +325,7 @@ img {
 .nav-menu {
   display: flex;
   flex-wrap: wrap;
+  justify-content: ;
   margin: 0px;
 }
 
@@ -713,13 +714,13 @@ img {
 /* Catalog */
 .catalog-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 3fr;
 }
 
 /*Sorting*/
 .sorting {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   background-color: var(--sorting-title-grey);
 }
 
