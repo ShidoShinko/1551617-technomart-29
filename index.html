@@ -77,8 +77,8 @@
         </nav>
       </div>
     </header>
-    <main class="main">
-      <h1>Техномарт</h1>
+    <main class="main main-index">
+      <h1 class="visualy-hidden">Техномарт</h1>
 
       <div class="wrapper">
         <section class="advantages">
@@ -150,81 +150,118 @@
           </article>
           <section class="slider">
             <article class="slider-card">
-              <h3 class="slider-title">Перфораторы</h3>
-              <p class="slider-text">Настоящие мужские игрушки</p>
-              <a href="catalog.html" class="main-button">Открыть каталог</a>
+              <div class="slider-container">
+                <h3 class="slider-title">Перфораторы</h3>
+                <p class="slider-text">Настоящие мужские игрушки</p>
+              </div>
+              <a href="catalog.html" class="main-button slider-button">
+                Открыть каталог
+              </a>
             </article>
-
-            <!-- Для правильного размещения сетки гридов отключено -->
-            <!-- <article class="slider-card">
-              <h3 class="slider-title">Дрели</h3>
-              <p class="slider-text">Соседям на радость!</p>
-              <a href="catalog.html" class="main-button">Открыть каталог</a>
-              <img
-                src="img/drills.jpg"
-                width="620"
-                height="266"
-                alt="Мужчина работает дрелью в специальной экипировке."
-              />
-            </article> -->
+            <article
+              class="slider-card visualy-hidden"
+              style="background-image: url(img/drills.jpg)"
+            >
+              <div class="slider-container">
+                <h3 class="slider-title">Дрели</h3>
+                <p class="slider-text">Соседям на радость!</p>
+              </div>
+              <a href="catalog.html" class="main-button slider-button">
+                Открыть каталог
+              </a>
+            </article>
           </section>
         </section>
         <section class="popular-product">
-          <header>
+          <header class="main-header">
             <h2 class="main-title">Популярные товары:</h2>
             <a href="catalog.html" class="main-button">Все популярные товары</a>
           </header>
           <ul class="list popular-product-list">
             <li class="product-item">
-              <img
-                src="img/bosch9000.jpg"
-                width="184"
-                height="164"
-                alt="Синий перфоратор с длинным сверлом и рукояткой для второй руки."
-              />
-              <h3 class="product-title">Перфоратор BOSCH BFG 9000</h3>
-              <p class="product-oldprice">32500 Р.</p>
-              <a href="catalog.html" class="product-price">25500 Р.</a>
+              <a href="catalog.html" class="product-img-link">
+                <img
+                  src="img/bosch9000.jpg"
+                  width="184"
+                  height="164"
+                  alt="Синий перфоратор с длинным сверлом и рукояткой для второй руки."
+                />
+              </a>
+              <h3 class="product-title">
+                <a href="catalog.html" class="product-link">
+                  Перфоратор BOSCH BFG 9000
+                </a>
+              </h3>
+              <div class="product-prices">
+                <p class="product-oldprice">32500 Р.</p>
+                <a href="catalog.html" class="product-price">25500 Р.</a>
+              </div>
             </li>
             <li class="product-item">
-              <img
-                src="img/bosch3000.jpg"
-                width="127"
-                height="112"
-                alt="Синий компактный перфоратор с коротким сверлом и рукояткой для второй руки."
-              />
-              <h3 class="product-title">Перфоратор BOSCH BFG 3000</h3>
-              <p class="product-oldprice">22500 Р.</p>
-              <a href="catalog.html" class="product-price">15500 Р.</a>
+              <a href="catalog.html" class="product-img-link">
+                <img
+                  src="img/bosch3000.jpg"
+                  width="127"
+                  height="112"
+                  alt="Синий компактный перфоратор с коротким сверлом и рукояткой для второй руки."
+                />
+              </a>
+              <h3 class="product-title">
+                <a href="catalog.html" class="product-link">
+                  Перфоратор BOSCH BFG 3000
+                </a>
+              </h3>
+              <div class="product-prices">
+                <p class="product-oldprice">22500 Р.</p>
+                <a href="catalog.html" class="product-price">15500 Р.</a>
+              </div>
             </li>
             <li class="product-item">
-              <img
-                src="img/bosch6000.jpg"
-                width="144"
-                height="128"
-                alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
-              />
-              <h3 class="product-title">Перфоратор BOSCH BFG 6000</h3>
-              <p class="product-oldprice">30500 Р.</p>
-              <a href="catalog.html" class="product-price">25500 Р.</a>
+              <a href="catalog.html" class="product-img-link">
+                <img
+                  src="img/bosch6000.jpg"
+                  width="144"
+                  height="128"
+                  alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
+                />
+              </a>
+              <h3 class="product-title">
+                <a href="catalog.html" class="product-link">
+                  Перфоратор BOSCH BFG 6000
+                </a>
+              </h3>
+              <div class="product-prices">
+                <p class="product-oldprice">30500 Р.</p>
+                <a href="catalog.html" class="product-price">25500 Р.</a>
+              </div>
             </li>
             <li class="product-item">
-              <img
-                src="img/bosch2000.jpg"
-                width="127"
-                height="112"
-                alt="Синий компактный перфоратор с рукояткой для второй руки."
-              />
-              <h3 class="product-title">Перфоратор BOSCH BFG 2000</h3>
-              <a href="catalog.html" class="product-price">12500 Р.</a>
+              <a href="catalog.html" class="product-img-link">
+                <img
+                  src="img/bosch2000.jpg"
+                  width="127"
+                  height="112"
+                  alt="Синий компактный перфоратор с рукояткой для второй руки."
+                />
+              </a>
+              <h3 class="product-title">
+                <a href="catalog.html" class="product-link">
+                  Перфоратор BOSCH BFG 2000
+                </a>
+              </h3>
+              <div class="product-prices">
+                <a href="catalog.html" class="product-price">12500 Р.</a>
+              </div>
             </li>
           </ul>
         </section>
 
         <section class="popular-brands">
-          <header class="popular-brands-header">
+          <header class="main-header">
             <h2 class="main-title">Популярные производители:</h2>
-            <a href="catalog.html" class="main-button">Все производители</a>
+            <a href="catalog.html" class="main-button popular-brand-button">
+              Все производители
+            </a>
           </header>
           <ul class="list popular-brand-list">
             <li class="brand-item">
@@ -332,19 +369,14 @@
             </ul>
             <ul class="list">
               <li class="services-item services-item-selected">
-                <h3 class="service-title">Доставка</h3>
-                <p class="services-text">
-                  Мы с удовольствием доставим ваш товар прямо к вашему подъезду
-                  совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его
-                  на ваш этаж!
-                </p>
-                <img
-                  src="img/delivery.svg"
-                  width="468"
-                  height="261"
-                  alt="Серый грузовик с синим кузовом."
-                  class="service-image"
-                />
+                <div class="service-container">
+                  <h3 class="service-title">Доставка</h3>
+                  <p class="service-text">
+                    Мы с удовольствием доставим ваш товар прямо к&nbsp;вашему
+                    подъезду совершенно бесплатно! Ведь&nbsp;мы&nbsp;неплохо
+                    заработаем, поднимая&nbsp;его&nbsp;на&nbsp;ваш&nbsp;этаж!
+                  </p>
+                </div>
               </li>
               <li class="services-item">
                 <h3 class="service-title">Гарантия</h3>
@@ -383,7 +415,7 @@
       </section>
 
       <div class="wrapper company-wrapper">
-        <section>
+        <section class="company">
           <h2 class="company-title">Компания «Техномарт»</h2>
           <p class="company-text">
             Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров
@@ -392,16 +424,18 @@
           </p>
           <p class="company-text">
             Мы можем доставить ваш товар в самые отдаленные точки России!
-            Техномарт работает со многими транспортными компаниями:
+            Техномарт&nbsp;работает со многими транспортными компаниями:
           </p>
-          <ul class="list">
+          <ul class="list company-list">
             <li class="company-list-item">Деловые линии</li>
             <li class="company-list-item">Автотрейдинг</li>
             <li class="company-list-item">ЖелДорЭкспедиция</li>
           </ul>
-          <a href="#" class="main-button">Подробнее о компании</a>
+          <a href="#" class="main-button company-button"
+            >Подробнее о компании</a
+          >
         </section>
-        <section>
+        <section class="contact">
           <h2 class="contacts-title">Контакты</h2>
           <p class="contacts-text">
             Вы можете забрать товар сами, заехав в наш офис:
@@ -412,7 +446,9 @@
             height="158"
             alt="Карта офиса по адресу улица Большая Конюшевская 19"
           />
-          <a href="#" class="main-button">Заблудились? Напишите нам!</a>
+          <a href="#" class="main-button contacts-button"
+            >Заблудились? Напишите нам!</a
+          >
         </section>
       </div>
     </main>
@@ -430,27 +466,41 @@
           <p class="footer-address">
             г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 +7 (812) 555-05-55
           </p>
-          <ul class="list footer-menu">
-            <li><a href="#" class="footer-menu-link">Компания</a></li>
-            <li><a href="#" class="footer-menu-link">Новости</a></li>
-            <li><a href="catalog.html" class="footer-menu-link">Каталог</a></li>
-            <li><a href="#" class="footer-menu-link">Доставка</a></li>
-            <li><a href="#" class="footer-menu-link">Контакты</a></li>
-          </ul>
-          <ul class="list footer-menu">
-            <li>
-              <a href="#" class="footer-menu-link-yellow"> Материалы </a>
-            </li>
-            <li>
-              <a href="#" class="footer-menu-link-yellow"> Техника </a>
-            </li>
-            <li>
-              <a href="#" class="footer-menu-link-yellow"> Инструмент </a>
-            </li>
-            <li>
-              <a href="#" class="footer-menu-link-yellow"> Спецпредложения </a>
-            </li>
-          </ul>
+          <div class="footer-menu-container">
+            <ul class="list footer-menu">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Компания</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Новости</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="catalog.html" class="footer-menu-link">Каталог</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Доставка</a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="list footer-menu">
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link-yellow"> Материалы </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link-yellow"> Техника </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link-yellow"> Инструмент </a>
+              </li>
+              <li class="footer-menu-item">
+                <a href="#" class="footer-menu-link-yellow">
+                  Спецпредложения
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="footer-lower">
