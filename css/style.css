@@ -108,6 +108,7 @@ body {
 
 a {
   text-decoration: none;
+  color: var(--basic-white);
 }
 
 img {
@@ -323,7 +324,6 @@ img {
 .button-account {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
   font-size: 21px;
   line-height: 21px;
   color: var(--basic-black);
@@ -372,7 +372,6 @@ img {
   line-height: 21px;
   color: var(--basic-black);
   width: 299px;
-  /* padding-left: 56px; */
   grid-column-start: 2;
 }
 
@@ -612,6 +611,7 @@ img {
   text-transform: uppercase;
   background-color: var(--basic-red);
   transform: rotate(45deg);
+  top: 0;
   left: 213px;
   width: 100px;
   height: 26px;
@@ -800,6 +800,7 @@ img {
   background-color: var(--basic-red);
   color: var(--basic-white);
   transform: rotate(45deg);
+  top: 0;
   left: 131px;
   width: 100px;
   height: 26px;
@@ -1135,8 +1136,6 @@ img {
 
 /*Sorting*/
 .sorting {
-  /* display: grid;
-  grid-template-columns: 1fr 2fr; */
   background-color: var(--sorting-title-grey);
   display: flex;
   align-items: center;
