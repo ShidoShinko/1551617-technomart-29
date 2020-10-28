@@ -12,18 +12,52 @@
       <div class="header-bar">
         <div class="wrapper header-bar-container">
           <div class="header-logo">
-            <img
-              src="img/logo.svg"
-              width="220"
-              height="47"
-              alt="Красный логотип Техномарт."
-            />
+            <a href="index.html">
+              <img
+                src="img/logo.svg"
+                width="220"
+                height="47"
+                alt="Красный логотип Техномарт."
+              />
+            </a>
           </div>
           <div class="header-search">
             <p>Поиск:</p>
           </div>
-          <a href="#" class="header-favorites">Закладки: 0</a>
-          <a href="#" class="header-basket header-basket-fill">Корзина: 10</a>
+          <a href="#" class="header-favorites">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 14 16"
+              class="header-favorites-icon"
+            >
+              <defs />
+              <path
+                fill="#fff"
+                d="M14 15c0 .55-.37.74-.82.43l-5.36-3.77a1.54 1.54 0 00-1.64 0L.82 15.43c-.45.31-.82.12-.82-.43V1a1 1 0 011-1h12a1 1 0 011 1v14z"
+                opacity=".3"
+                class="header-favorites-icon-path"
+              />
+            </svg>
+            Закладки: 0
+          </a>
+          <a href="#" class="header-basket header-basket-fill">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 15 15"
+              class="header-basket-icon"
+            >
+              <defs />
+              <path
+                fill="#fff"
+                d="M4.5 15a1.5 1.5 0 100-3 1.5 1.5 0 000 3zm8 0a1.5 1.5 0 100-3 1.5 1.5 0 000 3zM15 2H4.07l-.42-2H0v2h2.03l1.99 9H15V9H9.44L15 6.95V2z"
+                opacity=".3"
+                class="header-basket-icon-path"
+              />
+            </svg>
+            Корзина: 10
+          </a>
           <a href="#" class="button-order">Оформить заказ</a>
         </div>
       </div>
@@ -40,11 +74,43 @@
           </p>
           <div class="header-account">
             <a href="#" class="button-account button-account-name">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 18"
+                class="button-account-name-icon"
+              >
+                <defs />
+                <path
+                  fill="#C5C5C5"
+                  d="M17.88 14.17c-2.14-.74-4.25-1.67-5.2-2.4-.66-.5-.78-1.61-.52-2.4a5.49 5.49 0 001.86-4.29C14.02 2.28 12.22 0 10 0 7.78 0 5.98 2.28 5.98 5.08c0 1.8.75 3.38 1.86 4.28.26.8.14 1.92-.51 2.42-.95.72-3.07 1.65-5.21 2.39C-.03 14.9 0 18 0 18h20s.02-3.1-2.12-3.83z"
+                  class="button-account-name-icon-path"
+                />
+              </svg>
               Равшан Джамшутович
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 18"
+                class="button-account-login-icon"
+              >
+                <defs />
+                <path
+                  fill="#C5C5C5"
+                  d="M20 9L11.12.5v6h-6v5h6v6L20 9z"
+                  class="button-account-login-icon-path"
+                />
+                <path
+                  fill="#C5C5C5"
+                  d="M2.1 14.45V3.55c.02-.38.18-1.06 1.02-1.06h5.02V.5H3.12C.94.5.12 2.31.09 3.53v10.94C.1 15.7.94 17.5 3.12 17.5h5.02v-1.99H3.12c-.84 0-1-.68-1.01-1.06z"
+                  class="button-account-login-icon-path"
+                />
+              </svg>
             </a>
           </div>
           <div class="account-container">
             <a href="#" class="account-private">Мои заказы</a>
+            <span class="account-private-dot"></span>
             <a href="#" class="account-private">Личный кабинет</a>
           </div>
         </div>
@@ -79,44 +145,86 @@
       <div class="wrapper">
         <h1 class="visualy-hidden">Каталог</h1>
         <ul class="list breadcrubms">
-          <li>
-            <a href="index.html">
-              <img
-                src="https://via.placeholder.com/14x12"
-                width="14"
-                height="12"
-                alt="Иконка возвращения на главную страницу."
-              />
+          <li class="breadcrubms-item">
+            <a href="index.html" class="breadcrumbs-link">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 14 12"
+                class="breadcrubms-home-icon"
+              >
+                <defs />
+                <path fill="#C1C6CE" d="M2 8v4h4V8h2v4h4V8L7 3.5 2 8z" />
+                <path
+                  fill="#C1C6CE"
+                  d="M13.8 6.4L12 4.8V0h-2v3L7.3.6h-.1H7 6.8h-.1L.2 6.4a.5.5 0 00.6.7L7 1.7 13.2 7a.5.5 0 00.6-.7z"
+                />
+              </svg>
             </a>
           </li>
-          <li><a href="catalog.html" class="breadcrumbs-link">Каталог</a></li>
-          <li>
+          <li class="breadcrubms-item">
+            <a href="catalog.html" class="breadcrumbs-link">Каталог</a>
+          </li>
+          <li class="breadcrubms-item">
             <a href="catalog.html" class="breadcrumbs-link">Инструмент</a>
           </li>
-          <li>
-            <a class="breadcrumbs-link"> Перфораторы </a>
+          <li class="breadcrubms-item">
+            <a class="breadcrumbs-link">Перфораторы</a>
           </li>
         </ul>
         <h2 class="main-title catalog-title">Перфораторы</h2>
         <div class="catalog-container">
-          <section>
-            <h2>Фильтр товаров</h2>
-            <!--фильтр-->
+          <section class="filter">
+            <h3 class="filter-title">Фильтр:</h3>
           </section>
           <div>
             <section class="sorting">
               <h3 class="sorting-title">Сортировка:</h3>
               <ul class="list sorting-list">
-                <li class="sorting-item">
+                <li class="sorting-item sorting-price-item">
                   <a href="#" class="sorting-link sorting-link-selected">
                     По цене
                   </a>
                 </li>
                 <li class="sorting-item">
-                  <a href="#" class="sorting-link"> По типу </a>
+                  <a href="#" class="sorting-link sorting-type-item">
+                    По типу
+                  </a>
                 </li>
                 <li class="sorting-item">
-                  <a href="#" class="sorting-link"> По функционалу </a>
+                  <a href="#" class="sorting-link sorting-functional-item">
+                    По функционалу
+                  </a>
+                </li>
+                <li class="sorting-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 11 10"
+                    class="sorting-up-dir-icon"
+                  >
+                    <defs />
+                    <path
+                      fill="#C5C5C5"
+                      d="M5.5 10L0 0h11"
+                      class="sorting-up-dir-icon-path sorting-icon-path-selected"
+                    />
+                  </svg>
+                </li>
+                <li class="sorting-item">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 11 10"
+                    class="sorting-down-dir-icon"
+                  >
+                    <defs />
+                    <path
+                      fill="#C5C5C5"
+                      d="M5.5 10L0 0h11"
+                      class="sorting-down-dir-icon-path"
+                    />
+                  </svg>
                 </li>
               </ul>
             </section>
@@ -130,6 +238,14 @@
                     alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 6000
@@ -149,6 +265,14 @@
                     alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 6000
@@ -160,7 +284,15 @@
                 </div>
               </li>
               <li class="product-item">
-                <div class="product-button-container">
+                <a href="catalog.html" class="product-img-link">
+                  <img
+                    src="img/bosch6000.jpg"
+                    width="144"
+                    height="128"
+                    alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
+                  />
+                </a>
+                <div class="product-button-container hover-hide">
                   <button type="button" class="button-catalog-buy">
                     Купить
                   </button>
@@ -187,6 +319,14 @@
                     alt="Синий компактный перфоратор с коротким сверлом и рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 3000
@@ -206,6 +346,14 @@
                     alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 6000
@@ -225,6 +373,14 @@
                     alt="Синий компактный перфоратор с рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 2000
@@ -243,6 +399,14 @@
                     alt="Синий компактный перфоратор с коротким сверлом и рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 3000
@@ -262,6 +426,14 @@
                     alt="Синий перфоратор средних размеров со средним сверлом и рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 6000
@@ -281,6 +453,14 @@
                     alt="Синий компактный перфоратор с рукояткой для второй руки."
                   />
                 </a>
+                <div class="product-button-container hover-hide">
+                  <button type="button" class="button-catalog-buy">
+                    Купить
+                  </button>
+                  <button type="button" class="button-catalog-favorites">
+                    В закладки
+                  </button>
+                </div>
                 <h3 class="product-title">
                   <a href="catalog.html" class="product-link">
                     Перфоратор BOSCH BFG 2000
@@ -384,34 +564,54 @@
             © 2010-2019 Компания «Техномарт» Все права защищены
           </p>
           <ul class="list social">
-            <li>
+            <li class="social-item">
               <a href="https://vk.com">
-                <img
-                  src="https://via.placeholder.com/40x40"
-                  width="40"
-                  height="40"
-                  alt="Логотип сайта https://vk.com"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 26 15"
+                  class="social-vk-icon"
+                >
+                  <defs />
+                  <path
+                    fill="#fff"
+                    d="M15.54 11.73c.92-.3 2.1 1.91 3.35 2.75.95.64 1.67.5 1.67.5l3.34-.04s1.75-.1.92-1.46c-.07-.11-.48-1-2.49-2.83-2.1-1.92-1.8-1.6.72-4.92C24.58 3.71 25.2 2.48 25 1.95c-.19-.5-1.32-.37-1.32-.37l-3.77.03c-.36 0-.67.1-.82.48 0 0-.6 1.56-1.39 2.89-1.67 2.8-2.34 2.95-2.62 2.77-.64-.4-.48-1.63-.48-2.5 0-2.71.42-3.84-.81-4.14-.41-.1-.71-.16-1.76-.17-1.34-.02-2.48 0-3.12.31-.43.21-.76.67-.56.7.25.03.8.14 1.11.54.39.52.37 1.68.37 1.68s.22 3.2-.52 3.6c-.5.27-1.2-.29-2.7-2.83-.76-1.3-1.34-2.74-1.34-2.74s-.1-.27-.3-.42c-.25-.17-.59-.22-.59-.22l-3.57.02s-.54.01-.74.24c-.17.2-.01.63-.01.63s2.8 6.45 5.97 9.7c2.9 2.98 6.21 2.79 6.21 2.79h1.5s.45-.05.68-.3c.22-.22.21-.64.21-.64s-.03-1.98.9-2.27z"
+                  />
+                </svg>
               </a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="https://facebook.com">
-                <img
-                  src="https://via.placeholder.com/40x40"
-                  width="40"
-                  height="40"
-                  alt="Логотип сайта https://facebook.com"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 12 22"
+                  class="social-fb-icon"
+                >
+                  <defs />
+                  <path
+                    fill="#fff"
+                    d="M12 4V0H8a4 4 0 00-4 4v4H0v4h4v10h4V12h4V8H8V4h4z"
+                  />
+                </svg>
               </a>
             </li>
-            <li>
+            <li class="social-item">
               <a href="https://instagram.com">
-                <img
-                  src="https://via.placeholder.com/40x40"
-                  width="40"
-                  height="40"
-                  alt="Логотип сайта https://instagram.com"
-                />
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 21 21"
+                  class="social-insta-icon"
+                >
+                  <defs />
+                  <path
+                    fill="#fff"
+                    fill-rule="evenodd"
+                    d="M3 0h15a3 3 0 013 3v15a3 3 0 01-3 3H3a3 3 0 01-3-3V3a3 3 0 013-3zm11 10.5a3.5 3.5 0 10-7 0 3.5 3.5 0 007 0zM3 18V9h1.18a6.5 6.5 0 1012.64 0H18v9H3zM14 7h4V3h-4v4z"
+                    clip-rule="evenodd"
+                  />
+                </svg>
               </a>
             </li>
           </ul>
@@ -422,7 +622,7 @@
             </a>
           </p>
           <p class="footer-text footer-developer">
-            Разработано -
+            Разработано &ndash;
             <a href="https://htmlacademy.ru" class="footer-link">
               htmlacademy.ru
             </a>
