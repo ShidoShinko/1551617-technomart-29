@@ -26,6 +26,8 @@
           </div>
           <a href="#" class="header-favorites">
             <svg
+              aria-hidden="true"
+              focusable="false"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 14 16"
@@ -43,6 +45,8 @@
           </a>
           <a href="#" class="header-basket header-basket-fill">
             <svg
+              aria-hidden="true"
+              focusable="false"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
               viewBox="0 0 15 15"
@@ -75,6 +79,8 @@
           <div class="header-account">
             <a href="#" class="button-account button-account-name">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 20 18"
@@ -89,6 +95,8 @@
               </svg>
               Равшан Джамшутович
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 20 18"
@@ -148,6 +156,8 @@
           <li class="breadcrubms-item">
             <a href="index.html" class="breadcrumbs-link">
               <svg
+                aria-hidden="true"
+                focusable="false"
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
                 viewBox="0 0 14 12"
@@ -176,6 +186,157 @@
         <div class="catalog-container">
           <section class="filter">
             <h3 class="filter-title">Фильтр:</h3>
+            <form
+              class="fliter"
+              name="catalog-filter"
+              method="get"
+              action="https://echo.htmlacademy.ru"
+            >
+              <fieldset>
+                <legend class="filter-legend">Цена:</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div
+                        class="bar"
+                        style="width: 50%; margin-left: 20%"
+                      ></div>
+                    </div>
+                    <div
+                      class="toggle toggle-min"
+                      tabindex="0"
+                      style="left: 20%"
+                    ></div>
+                    <div
+                      class="toggle toggle-max"
+                      tabindex="0"
+                      style="left: 60%"
+                    ></div>
+                  </div>
+                  <div class="price-controls">
+                    <input type="number" name="min-price" value="0" />
+                    <span>-</span>
+                    <input type="number" name="max-price" value="30000" />
+                  </div>
+                </div>
+              </fieldset>
+              <fieldset>
+                <legend class="filter-legend">Производители:</legend>
+                <ul class="list filter-list">
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="bosch"
+                      id="filter-bosch"
+                      checked
+                      disabled
+                    />
+                    <label
+                      class="filter-label filter-label-checkbox"
+                      for="filter-bosch"
+                    >
+                      Bosch
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="interskol"
+                      id="filter-interskol"
+                      disabled
+                    />
+                    <label
+                      class="filter-label filter-label-checkbox"
+                      for="filter-interskol"
+                    >
+                      Интерскол
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="makita"
+                      id="filter-makita"
+                      checked
+                    />
+                    <label
+                      class="filter-label filter-label-checkbox"
+                      for="filter-makita"
+                    >
+                      Makita
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="dewalt"
+                      id="filter-dewalt"
+                    />
+                    <label
+                      class="filter-label filter-label-checkbox"
+                      for="filter-dewalt"
+                    >
+                      Dewalt
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-checkbox"
+                      type="checkbox"
+                      name="hitachi"
+                      id="filter-hitachi"
+                    />
+                    <label
+                      class="filter-label filter-label-checkbox"
+                      for="filter-hitachi"
+                    >
+                      Hitachi
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend class="filter-legend">Питание:</legend>
+                <ul class="list filter-list-radio">
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-radio"
+                      type="radio"
+                      name="supply"
+                      value="accumulator"
+                      id="filter-accumulator"
+                      checked
+                    />
+                    <label
+                      class="filter-label filter-label-radio"
+                      for="filter-accumulator"
+                    >
+                      Аккумуляторные
+                    </label>
+                  </li>
+                  <li class="filter-item">
+                    <input
+                      class="visualy-hidden filter-input-radio"
+                      type="radio"
+                      name="supply"
+                      value="main"
+                      id="filter-main"
+                    />
+                    <label
+                      class="filter-label filter-label-radio"
+                      for="filter-main"
+                    >
+                      Сетевые
+                    </label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filter-button" type="submit">Показать</button>
+            </form>
           </section>
           <div>
             <section class="sorting">
@@ -566,7 +727,10 @@
           <ul class="list social">
             <li class="social-item">
               <a href="https://vk.com" class="social-link">
+                <span class="visualy-hidden">Вконтакте</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 26 15"
@@ -582,7 +746,10 @@
             </li>
             <li class="social-item">
               <a href="https://facebook.com" class="social-link">
+                <span class="visualy-hidden">Facebook</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 12 22"
@@ -598,7 +765,10 @@
             </li>
             <li class="social-item">
               <a href="https://instagram.com" class="social-link">
+                <span class="visualy-hidden">Instagram</span>
                 <svg
+                  aria-hidden="true"
+                  focusable="false"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 21 21"
@@ -633,6 +803,8 @@
     <section class="modal modal-basket-success">
       <div class="modal-wrapper">
         <svg
+          aria-hidden="true"
+          focusable="false"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 66 66"
