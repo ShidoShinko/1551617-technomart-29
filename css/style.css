@@ -1449,7 +1449,7 @@ img {
   margin-left: 70px;
 }
 
-.social-item {
+.social-link {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1461,28 +1461,25 @@ img {
   border-radius: 50%;
 }
 
-.social-item:hover {
+.social-link:hover {
   background-color: var(--basic-red);
 }
 
-.social-item:active {
+.social-link:active {
   background-color: var(--basic-red);
 }
 
 .social-vk-icon {
-  padding-top: 7px;
   width: 26px;
   height: 15px;
 }
 
 .social-fb-icon {
-  padding-top: 7px;
   width: 12px;
   height: 22px;
 }
 
 .social-insta-icon {
-  padding-top: 7px;
   width: 21px;
   height: 21px;
 }
