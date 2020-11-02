@@ -59,7 +59,7 @@
             </svg>
             Корзина: 0
           </a>
-          <a href="#" class="button-order">Оформить заказ</a>
+          <a href="#" class="button-order"> Оформить заказ </a>
         </div>
       </div>
 
@@ -98,10 +98,6 @@
             <a href="#" class="button-account header-button-registration">
               Регистрация
             </a>
-
-            <!-- <a href="#" class="button-account button-account-name">Равшан Джамшутович</a>
-          <a href="#" class="account-private">Мои заказы</a>
-          <a href="#" class="account-private">Личный кабинет</a> -->
           </div>
         </div>
         <nav class="nav">
@@ -136,7 +132,7 @@
 
       <div class="wrapper">
         <section class="advantages">
-          <!-- <h2>Преимущества</h2> -->
+          <h2 class="visualy-hidden">Преимущества</h2>
           <article class="advantage-card advantage-materials advantage-new">
             <div class="advantage-container">
               <h3 class="advantage-title">Материалы</h3>
@@ -256,6 +252,7 @@
             </svg>
           </article>
           <section class="slider">
+            <h2 class="visualy-hidden">Слайдер преимуществ</h2>
             <article class="slider-card">
               <div class="slider-container">
                 <h3 class="slider-title">Перфораторы</h3>
@@ -707,54 +704,50 @@
       </div>
     </footer>
     <section class="modal modal-map">
-      <h2>Карта</h2>
-      <!-- тут будет карта -->
-      <!-- <img
-        src="img/map-popup.jpg"
+      <h2 class="visualy-hidden">Карта</h2>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872586724!2d30.32085335228242!3d59.93871648178722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1604234631972!5m2!1sru!2sru"
         width="943"
         height="449"
-        alt="Карта офиса по адресу улица Большая Конюшевская 19"
-      /> -->
+        frameborder="0"
+        allowfullscreen
+        title="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"
+        aria-hidden="false"
+        tabindex="0"
+      ></iframe>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
     <section class="modal modal-feedback">
-      <p class="modal-discription">Ваше имя:</p>
+      <h2 class="visualy-hidden">Обратная связь</h2>
       <form class="feedback-form" action="#" method="post">
-        <p>
-          <label class="visualy-hidden" for="modal-name">Имя Фамилия</label>
-          <input
-            id="modal-name"
-            type="text"
-            name="name"
-            placeholder="Имя Фамилия"
-          />
-        </p>
+        <div class="form-row">
+          <div class="form-wrapper">
+            <label class="" for="modal-name">Ваше имя:</label>
+            <input
+              type="text"
+              name="name"
+              placeholder="Имя Фамилия"
+            />
+          </div>
+          <div class="form-wrapper">
+            <label class="" for="modal-email">Ваш e-mail:</label>
+            <input
+              type="email"
+              name="email"
+              placeholder="email@example.com"
+            />
+          </div>
+        </div>
+        <div class="form-wrapper form-row">
+          <label class="" for="message">Текст письма:</label>
+          <textarea name="message" placeholder="В свободной форме"></textarea>
+        </div>
+        <div class="modal-bottom-row">
+          <button type="submit" class="main-button form-button">
+            Отправить
+          </button>
+        </div>
       </form>
-      <p class="modal-discription">Ваш e-mail:</p>
-      <form class="feedback-form" action="#" method="post">
-        <p>
-          <label class="visualy-hidden" for="modal-email">e-mail</label>
-          <input
-            id="modal-email"
-            type="email"
-            name="email"
-            placeholder="email@example.com"
-          />
-        </p>
-      </form>
-      <p class="modal-discription">Текст письма:</p>
-      <form class="feedback-form feedback-text" action="#" method="post">
-        <p>
-          <label class="visualy-hidden" for="modal-text">Текст письма</label>
-          <input
-            id="modal-text"
-            type="text"
-            name="text"
-            placeholder="В свободной форме"
-          />
-        </p>
-      </form>
-      <a href="#" class="main-button modal-button"> Отправить </a>
       <button class="modal-close" type="button">Закрыть</button>
     </section>
   </body>
