@@ -1890,7 +1890,7 @@ img {
 }
 
 .modal {
-  /* display: none; */
+  display: none;
   position: fixed;
   top: 0;
   right: 0;
@@ -1946,7 +1946,7 @@ img {
 }
 
 .modal-feedback {
-  /* display: none; */
+  display: none;
   top: 200px;
   width: 620px;
   bottom: auto;
@@ -2022,6 +2022,7 @@ textarea::placeholder {
 }
 
 .modal-basket-success {
+  display: none;
   top: 200px;
   width: 620px;
   bottom: auto;

@@ -253,9 +253,25 @@
                     ></button>
                   </div>
                   <div class="price-controls">
-                    <input type="number" name="min-price" value="0" />
+                    <label class="visualy-hidden" for="min-price">
+                      Минимальная цена
+                    </label>
+                    <input
+                      type="number"
+                      id="min-price"
+                      name="min-price"
+                      value="0"
+                    />
                     <span class="price-controls-delimiter">&ndash;</span>
-                    <input type="number" name="max-price" value="30000" />
+                    <label class="visualy-hidden" for="max-price">
+                      Максимальная цена
+                    </label>
+                    <input
+                      type="number"
+                      id="max-price"
+                      name="max-price"
+                      value="30000"
+                    />
                   </div>
                 </div>
               </fieldset>
