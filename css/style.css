@@ -699,10 +699,8 @@ img {
 }
 
 .advantage-card {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
   position: relative;
-  width: 300px;
+  max-width: 300px;
   min-height: 123px;
   overflow: hidden;
 }
@@ -729,30 +727,55 @@ img {
   grid-row-start: 1;
   grid-column-start: 1;
   background-color: var(--basic-yellow);
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+  background-position: 213px center;
+  padding-right: 90px;
+  background-size: 44px 65px;
 }
 
 .advantage-instruments {
   grid-row-start: 1;
   grid-column-start: 2;
   background-color: var(--instruments);
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+  background-position: 194px center;
+  padding-right: 115px;
+  background-size: 75px 61px;
 }
 
 .advantage-technics {
   grid-row-start: 1;
   grid-column-start: 3;
   background-color: var(--technics);
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+  background-position: 191px center;
+  padding-right: 115px;
+  background-size: 78px 62px;
 }
 
 .advantage-discounts {
   grid-row-start: 2;
   grid-column-start: 3;
   background-color: var(--discounts);
+  background-image: url(../img/icon-4.svg);
+  background-repeat: no-repeat;
+  background-position: 196px center;
+  padding-right: 110px;
+  background-size: 59px 72px;
 }
 
 .advantage-delivery {
   grid-row-start: 3;
   grid-column-start: 3;
   background-color: var(--delivery);
+  background-image: url(../img/icon-5.svg);
+  background-repeat: no-repeat;
+  background-position: 191px center;
+  padding-right: 115px;
+  background-size: 78px 63px;
 }
 
 .advantage-title {
@@ -772,7 +795,7 @@ img {
   line-height: 18px;
   text-transform: uppercase;
   margin-left: 23px;
-  margin-top: 14px;
+  margin-top: 10px;
   width: 135px;
   min-height: 38px;
   background-color: var(--transparent-advant-white);
@@ -973,6 +996,18 @@ img {
 
 .hover-hide {
   display: none;
+}
+
+.product-item:focus-within > .product-button-container {
+  display: flex;
+}
+
+.product-item:focus-within .product-img-link {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
 }
 
 .product-item:hover {
